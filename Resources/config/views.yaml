@@ -1,0 +1,7 @@
+system:
+  admin_group:
+    field_templates:
+      - { template: "@ibexadesign/formIOBundle/fields/content_fields.html.twig" ,priority: 0 }
+  default:
+    field_templates:
+      - { template: "@ibexadesign/formIOBundle/fields/content_fields.html.twig" ,priority: 30 }

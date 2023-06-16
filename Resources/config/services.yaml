@@ -1,0 +1,24 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  App\formIOBundle\Command\AddFormIoURLCommand: ~
+  # add more service definitions when explicit configuration is needed
+  # please note that last definitions always *replace* previous ones
+  App\formIOBundle\FieldType\FormIoURL\Type:
+    public: true
+    tags:
+      - { name: ibexa.field_type, alias: formIoURL }
+
+  App\formIOBundle\Controller\:
+    resource: '../../Controller/*'
+
+  App\formIOBundle\Dqe\:
+    resource: '../../Dqe/'
+
+  App\formIOBundle\Helper\DqeHelper:
+    arguments:
+      $dqeLicense: '%form_io.dqe.license%'
+      $dqeHosts: '%form_io.dqe.validhosts%'
