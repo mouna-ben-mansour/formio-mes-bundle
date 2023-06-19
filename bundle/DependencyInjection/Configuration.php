@@ -1,6 +1,6 @@
 <?php
 
-namespace App\formIOBundle\DependencyInjection;
+namespace Novactive\Bundle\formIOBundle\DependencyInjection;
 
 use Ibexa\Bundle\Core\DependencyInjection\Configuration\SiteAccessAware\Configuration as SiteAccessConfiguration;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;

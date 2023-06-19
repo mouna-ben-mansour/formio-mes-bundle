@@ -1,6 +1,6 @@
 <?php
 
-namespace App\formIOBundle\Helper;
+namespace Novactive\Bundle\formIOBundle\Helper;
 
 use Psr\Log\LoggerInterface;
 

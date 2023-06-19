@@ -1,10 +1,10 @@
 <?php
 
-namespace App\formIOBundle\Command;
+namespace Novactive\Bundle\formIOBundle\Command;
 
-use App\formIOBundle\Command\ContentType;
-use App\formIOBundle\Core\Converter\ContentTypesHelper;
-use App\formIOBundle\Core\Installer\Field as FieldInstaller;
+use Novactive\Bundle\formIOBundle\Command\ContentType;
+use Novactive\Bundle\formIOBundle\Core\Converter\ContentTypesHelper;
+use Novactive\Bundle\formIOBundle\Core\Installer\Field as FieldInstaller;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
