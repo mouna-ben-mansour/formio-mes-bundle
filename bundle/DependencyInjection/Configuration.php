@@ -8,7 +8,7 @@ use Symfony\Component\HttpKernel\Kernel;
 
 class Configuration extends SiteAccessConfiguration
 {
-    public const CONFIGRESOLVER_NAMESPACE = 'form_io';
+    public const CONFIGRESOLVER_NAMESPACE = 'formio';
     public function getConfigTreeBuilder(): TreeBuilder
     {
         if (Kernel::MAJOR_VERSION > 4) {
@@ -19,7 +19,7 @@ class Configuration extends SiteAccessConfiguration
             $rootNode = $treeBuilder->root(self::CONFIGRESOLVER_NAMESPACE);
         }
         $this->generateScopeBaseNode($rootNode)
-                ->scalarNode('fieldtype_formiourl_identifier')->defaultValue('form_io_url')->end()
+                ->scalarNode('fieldtype_formiourl_identifier')->defaultValue('formio_url')->end()
                 ->scalarNode('admin_user_id')->end()
                 ->scalarNode('formiourl_field_name')->end()
                 ->scalarNode('formiourl_field_description')->end()

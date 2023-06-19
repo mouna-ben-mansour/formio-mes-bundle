@@ -37,10 +37,10 @@ class FormIOExtension extends Extension implements PrependExtensionInterface
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
 
-        if ($container->hasParameter(' form_io.default.admin_user_id')) {
+        if ($container->hasParameter(' formio.default.admin_user_id')) {
             $container->setParameter(
-                'form_io.default.default.admin_user_id',
-                $container->getParameter('form_io.default.admin_user_id')
+                'formio.default.default.admin_user_id',
+                $container->getParameter('formio.default.admin_user_id')
             );
         }
     }

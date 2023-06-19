@@ -11,7 +11,7 @@ class CustomFallbackPass implements CompilerPassInterface
 {
     public function process(ContainerBuilder $container): void
     {
-        $configs = $container->getExtensionConfig('form_io');
+        $configs = $container->getExtensionConfig('formio');
 
         // @todo: How to do that by SiteAccess
         if (isset($configs[0]['system']['default']['custom_fallback_service'])) {

@@ -1,26 +1,26 @@
 parameters:
-    form_io.default.admin_user_id: 14
-    form_io.default.formiourl_field_name: Form Io Url
-    form_io.default.formiourl_field_description:  Form io url to insert form
-    form_io.default.fieldtype_formiourl_identifier: "form_io_url"
-    form_io.default.default_metas:
+    formio.default.admin_user_id: 14
+    formio.default.formiourl_field_name: Form Io Url
+    formio.default.formiourl_field_description:  Form io url to insert form
+    formio.default.fieldtype_formiourl_identifier: "formio_url"
+    formio.default.default_metas:
         author: "Ibexa Community Bundle Form io Bundle"
         copyright: ~
         generator: "Ibexa Platform"
         MSSmartTagsPreventParsing: "TRUE"
-    form_io.default.dqe_host: 'https://prod2.dqe-software.com/'
-    form_io.default.dqe_validator:
+    formio.default.dqe_host: 'https://prod2.dqe-software.com/'
+    formio.default.dqe_validator:
         enabled: true
         validate_referer: true
         # Set the DQE Licence key to use
         key: '%env(DQE_LICENCE)%'
-#form_io:
+#formio:
 #    system:
 #        default:
 #            admin_user_id: 14
 #            formiourl_field_name: Form Io Url
 #            formiourl_field_description: Form io url to insert form
-#            fieldtype_formiourl_identifier: "form_io_url"
+#            fieldtype_formiourl_identifier: "formio_url"
 #            default_metas:
 #                author: "Ibexa Community Bundle Form io Bundle"
 #                copyright: ~

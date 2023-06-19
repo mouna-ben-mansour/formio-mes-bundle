@@ -44,7 +44,7 @@ formio_dqe_proxy:
 It is used in command Add field SEO in Content Type
 
 ```yml
-form_io.default.admin_user_id: NEW_ADMIN_ID
+formio.default.admin_user_id: NEW_ADMIN_ID
 ```
 
 ## Configuration

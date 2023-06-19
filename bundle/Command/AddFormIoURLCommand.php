@@ -60,7 +60,7 @@ class AddFormIoURLCommand extends Command
     {
         // Use in-build functions to set name, description and help
 
-        $this->setName('form_io:form-io-url')
+        $this->setName('formio:form-io-url')
             ->setDescription('Add form-io-url to Content Types')
             ->addOption('identifier', null, InputOption::VALUE_REQUIRED, 'a content type identifier')
             ->addOption(
@@ -126,7 +126,7 @@ class AddFormIoURLCommand extends Command
             return 0;
         }
 
-        $fieldName = $this->configResolver->getParameter('fieldtype_formiourl_identifier', 'form_io');
+        $fieldName = $this->configResolver->getParameter('fieldtype_formiourl_identifier', 'formio');
         foreach ($contentTypes as $contentType) {
             $io->section("Doing {$contentType->getName()}");
             if ($this->fieldInstaller->fieldExists($fieldName, $contentType)) {

@@ -62,12 +62,12 @@ class Field
         $fieldCreateStruct->names =
             array_fill_keys(
                 $knowLanguage,
-                $this->configResolver->getParameter('formiourl_field_name', 'form_io')
+                $this->configResolver->getParameter('formiourl_field_name', 'formio')
             );
         $fieldCreateStruct->descriptions =
             array_fill_keys(
                 $knowLanguage,
-                $this->configResolver->getParameter('formiourl_field_description', 'form_io')
+                $this->configResolver->getParameter('formiourl_field_description', 'formio')
             );
 
         $fieldCreateStruct->position = 100;

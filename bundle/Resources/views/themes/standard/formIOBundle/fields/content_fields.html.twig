@@ -1,6 +1,6 @@
 {%  extends '@IbexaCore/content_fields.html.twig'  %}
 {% block ezurl_field %}
-    {% if field.fieldDefIdentifier == 'form_io_url'%}
+    {% if field.fieldDefIdentifier == 'formio_url'%}
         {% block stylesheets %}
             {{ include('@ibexadesign/formIOBundle/includes/stylesheets.html.twig') }}
         {% endblock %}
@@ -9,7 +9,7 @@
                 <div class="help-block">Merci de renseigner ce champ. Tous les champs sont obligatoires.
                     <span class="icon-warning"></span>
                 </div>
-                <div id="formio" url-data="{{ibexa_field_value(content, 'form_io_url')}}"></div>
+                <div id="formio" url-data="{{ibexa_field_value(content, 'formio_url')}}"></div>
             {% endif %}
         {% endapply %}
         {% block javascripts %}

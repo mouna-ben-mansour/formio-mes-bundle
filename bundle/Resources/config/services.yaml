@@ -20,5 +20,5 @@ services:
 
   Mouna\Bundle\formIOBundle\Helper\DqeHelper:
     arguments:
-      $dqeLicense: '%form_io.dqe.license%'
-      $dqeHosts: '%form_io.dqe.validhosts%'
+      $dqeLicense: '%formio.dqe.license%'
+      $dqeHosts: '%formio.dqe.validhosts%'
