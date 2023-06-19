@@ -8,21 +8,27 @@ parameters:
         copyright: ~
         generator: "Ibexa Platform"
         MSSmartTagsPreventParsing: "TRUE"
-form_io:
-    system:
-        default:
-            admin_user_id: 14
-            formiourl_field_name: Form Io Url
-            formiourl_field_description: Form io url to insert form
-            fieldtype_formiourl_identifier: "form_io_url"
-            default_metas:
-                author: "Ibexa Community Bundle Form io Bundle"
-                copyright: ~
-                generator: "Ibexa Platform"
-                MSSmartTagsPreventParsing: "TRUE"
-            dqe_host: 'https://prod2.dqe-software.com/'
-            dqe_validator:
-                enabled: true
-                validate_referer: true
-                # Set the DQE Licence key to use
-                key: '%env(DQE_LICENCE)%'
+    form_io.default.dqe_host: 'https://prod2.dqe-software.com/'
+    form_io.default.dqe_validator:
+        enabled: true
+        validate_referer: true
+        # Set the DQE Licence key to use
+        key: '%env(DQE_LICENCE)%'
+#form_io:
+#    system:
+#        default:
+#            admin_user_id: 14
+#            formiourl_field_name: Form Io Url
+#            formiourl_field_description: Form io url to insert form
+#            fieldtype_formiourl_identifier: "form_io_url"
+#            default_metas:
+#                author: "Ibexa Community Bundle Form io Bundle"
+#                copyright: ~
+#                generator: "Ibexa Platform"
+#                MSSmartTagsPreventParsing: "TRUE"
+#            dqe_host: 'https://prod2.dqe-software.com/'
+#            dqe_validator:
+#                enabled: true
+#                validate_referer: true
+#                # Set the DQE Licence key to use
+#                key: '%env(DQE_LICENCE)%'

@@ -60,7 +60,7 @@ class AddFormIoURLCommand extends Command
     {
         // Use in-build functions to set name, description and help
 
-        $this->setName('app:form-io-url')
+        $this->setName('form_io:form-io-url')
             ->setDescription('Add form-io-url to Content Types')
             ->addOption('identifier', null, InputOption::VALUE_REQUIRED, 'a content type identifier')
             ->addOption(
@@ -157,7 +157,7 @@ class AddFormIoURLCommand extends Command
 
         $this->repository->getPermissionResolver()->setCurrentUserReference(
             $this->userService->loadUser(
-                $this->configResolver->getParameter('admin_user_id','form_io')
+                $this->configResolver->getParameter('admin_user_id','mouna.formiobundle')
             )
         );
     }
