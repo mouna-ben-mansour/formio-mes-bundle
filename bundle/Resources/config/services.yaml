@@ -4,21 +4,21 @@ services:
     autoconfigure: true
     public: false
 
-  Mouna\formIOBundle\Command\AddFormIoURLCommand: ~
+  Mouna\Bundle\formIOBundle\Command\AddFormIoURLCommand: ~
   # add more service definitions when explicit configuration is needed
   # please note that last definitions always *replace* previous ones
-  Mouna\formIOBundle\FieldType\FormIoURL\Type:
+  Mouna\Bundle\formIOBundle\FieldType\FormIoURL\Type:
     public: true
     tags:
       - { name: ibexa.field_type, alias: formIoURL }
 
-  Mouna\formIOBundle\Controller\:
+  Mouna\Bundle\formIOBundle\Controller\:
     resource: '../../Controller/*'
 
-  Mouna\formIOBundle\Dqe\:
+  Mouna\Bundle\formIOBundle\Dqe\:
     resource: '../../Dqe/'
 
-  Mouna\formIOBundle\Helper\DqeHelper:
+  Mouna\Bundle\formIOBundle\Helper\DqeHelper:
     arguments:
       $dqeLicense: '%form_io.dqe.license%'
       $dqeHosts: '%form_io.dqe.validhosts%'

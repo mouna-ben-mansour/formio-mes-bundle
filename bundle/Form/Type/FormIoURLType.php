@@ -1,8 +1,8 @@
 <?php
 
-namespace Mouna\formIOBundle\Form\Type;
+namespace Mouna\Bundle\formIOBundle\Form\Type;
 
-use Mouna\formIOBundle\FieldType\FormIoURL\Value;
+use Mouna\Bundle\formIOBundle\FieldType\FormIoURL\Value;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;

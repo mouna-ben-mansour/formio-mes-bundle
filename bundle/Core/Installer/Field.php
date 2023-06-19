@@ -1,6 +1,6 @@
 <?php
 
-namespace Mouna\formIOBundle\Core\Installer;
+namespace Mouna\Bundle\formIOBundle\Core\Installer;
 
 use DateTime;
 use Exception;

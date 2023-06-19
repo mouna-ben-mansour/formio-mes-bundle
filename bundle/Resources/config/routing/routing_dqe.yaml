@@ -1,0 +1,6 @@
+formio_dqe_proxy:
+  path: /dqe/proxy
+  defaults: { _controller: Mouna\Bundle\formIOBundle\Controller\DqeController::proxy }
+  methods: POST
+  options:
+    expose: true

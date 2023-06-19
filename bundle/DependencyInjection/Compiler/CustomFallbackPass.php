@@ -1,8 +1,8 @@
 <?php
 
-namespace Mouna\formIOBundle\DependencyInjection\Compiler;
+namespace Mouna\Bundle\formIOBundle\DependencyInjection\Compiler;
 
-use Mouna\formIOBundle\DependencyInjection\FormIOExtension;
+use Mouna\Bundle\formIOBundle\DependencyInjection\FormIOExtension;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;

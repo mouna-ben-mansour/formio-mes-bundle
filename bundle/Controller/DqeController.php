@@ -1,9 +1,9 @@
 <?php
 
-namespace Mouna\formIOBundle\Controller;
+namespace Mouna\Bundle\formIOBundle\Controller;
 
-use Mouna\formIOBundle\DependencyInjection\Configuration;
-use Mouna\formIOBundle\Dqe\DqeProxy;
+use Mouna\Bundle\formIOBundle\DependencyInjection\Configuration;
+use Mouna\Bundle\formIOBundle\Dqe\DqeProxy;
 use Ibexa\Contracts\Core\SiteAccess\ConfigResolverInterface;
 use Ibexa\Core\MVC\Symfony\SiteAccess;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

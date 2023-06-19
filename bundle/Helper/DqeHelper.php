@@ -1,6 +1,6 @@
 <?php
 
-namespace Mouna\formIOBundle\Helper;
+namespace Mouna\Bundle\formIOBundle\Helper;
 
 use Psr\Log\LoggerInterface;
 
