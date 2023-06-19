@@ -1,6 +1,6 @@
 <?php
 
-namespace Novactive\Bundle\formIOBundle\FieldType\FormIoURL;
+namespace Mouna\Bundle\formIOBundle\FieldType\FormIoURL;
 
 use Ibexa\Contracts\Core\FieldType\Value as ValueInterface;
 use Symfony\Component\Validator\Constraints as Assert;

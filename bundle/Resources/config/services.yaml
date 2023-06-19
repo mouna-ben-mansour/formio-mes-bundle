@@ -4,21 +4,21 @@ services:
     autoconfigure: true
     public: false
 
-  Novactive\Bundle\formIOBundle\Command\AddFormIoURLCommand: ~
+  Mouna\Bundle\formIOBundle\Command\AddFormIoURLCommand: ~
   # add more service definitions when explicit configuration is needed
   # please note that last definitions always *replace* previous ones
-  Novactive\Bundle\formIOBundle\FieldType\FormIoURL\Type:
+  Mouna\Bundle\formIOBundle\FieldType\FormIoURL\Type:
     public: true
     tags:
       - { name: ibexa.field_type, alias: formIoURL }
 
-  Novactive\Bundle\formIOBundle\Controller\:
+  Mouna\Bundle\formIOBundle\Controller\:
     resource: '../../Controller/*'
 
-  Novactive\Bundle\formIOBundle\Dqe\:
+  Mouna\Bundle\formIOBundle\Dqe\:
     resource: '../../Dqe/'
 
-  Novactive\Bundle\formIOBundle\Helper\DqeHelper:
+  Mouna\Bundle\formIOBundle\Helper\DqeHelper:
     arguments:
       $dqeLicense: '%form_io.dqe.license%'
       $dqeHosts: '%form_io.dqe.validhosts%'

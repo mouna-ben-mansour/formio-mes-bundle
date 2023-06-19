@@ -1,6 +1,6 @@
 <?php
 
-namespace Novactive\Bundle\formIOBundle\DependencyInjection;
+namespace Mouna\Bundle\formIOBundle\DependencyInjection;
 
 use Ibexa\Bundle\Core\DependencyInjection\Configuration\SiteAccessAware\ConfigurationProcessor;
 use Ibexa\Bundle\Core\DependencyInjection\Configuration\SiteAccessAware\ContextualizerInterface;

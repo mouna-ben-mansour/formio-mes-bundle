@@ -9,12 +9,12 @@ class ComposerStaticInit0e36fa27834ef0fa135c7bc4a021d521
     public static $prefixLengthsPsr4 = array (
         'N' => 
         array (
-            'Novactive\\Bundle\\formIOBundle\\' => 30,
+            'Mouna\\Bundle\\formIOBundle\\' => 30,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Novactive\\Bundle\\formIOBundle\\' => 
+        'Mouna\\Bundle\\formIOBundle\\' => 
         array (
             0 => __DIR__ . '/../..' . '/bundle',
         ),

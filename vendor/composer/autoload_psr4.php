@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Novactive\\Bundle\\formIOBundle\\' => array($baseDir . '/bundle'),
+    'Mouna\\Bundle\\formIOBundle\\' => array($baseDir . '/bundle'),
 );

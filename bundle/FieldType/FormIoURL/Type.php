@@ -1,8 +1,8 @@
 <?php
 
-namespace Novactive\Bundle\formIOBundle\FieldType\FormIoURL;
+namespace Mouna\Bundle\formIOBundle\FieldType\FormIoURL;
 
-use Novactive\Bundle\formIOBundle\Form\Type\FormIoURLType;
+use Mouna\Bundle\formIOBundle\Form\Type\FormIoURLType;
 use Ibexa\Contracts\Core\FieldType\Generic\Type as GenericType;
 use Ibexa\Contracts\ContentForms\Data\Content\FieldData;
 use Ibexa\Contracts\ContentForms\FieldType\FieldValueFormMapperInterface;
