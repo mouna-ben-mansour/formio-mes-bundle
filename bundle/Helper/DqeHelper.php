@@ -1,6 +1,6 @@
 <?php
 
-namespace Mouna\Bundle\formIOBundle\Helper;
+namespace Novactiva\Bundle\formIOBundle\Helper;
 
 use Psr\Log\LoggerInterface;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Mouna\Bundle\formIOBundle\Controller;
+namespace Novactiva\Bundle\formIOBundle\Controller;
 
-use Mouna\Bundle\formIOBundle\DependencyInjection\Configuration;
-use Mouna\Bundle\formIOBundle\Dqe\DqeProxy;
+use Novactiva\Bundle\formIOBundle\DependencyInjection\Configuration;
+use Novactiva\Bundle\formIOBundle\Dqe\DqeProxy;
 use Ibexa\Contracts\Core\SiteAccess\ConfigResolverInterface;
 use Ibexa\Core\MVC\Symfony\SiteAccess;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

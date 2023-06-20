@@ -1,10 +1,10 @@
 <?php
 
-namespace Mouna\Bundle\formIOBundle\Command;
+namespace Novactiva\Bundle\formIOBundle\Command;
 
-use Mouna\Bundle\formIOBundle\Command\ContentType;
-use Mouna\Bundle\formIOBundle\Core\Converter\ContentTypesHelper;
-use Mouna\Bundle\formIOBundle\Core\Installer\Field as FieldInstaller;
+use Novactiva\Bundle\formIOBundle\Command\ContentType;
+use Novactiva\Bundle\formIOBundle\Core\Converter\ContentTypesHelper;
+use Novactiva\Bundle\formIOBundle\Core\Installer\Field as FieldInstaller;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -157,7 +157,7 @@ class AddFormIoURLCommand extends Command
 
         $this->repository->getPermissionResolver()->setCurrentUserReference(
             $this->userService->loadUser(
-                $this->configResolver->getParameter('admin_user_id','mouna.formiobundle')
+                $this->configResolver->getParameter('admin_user_id','novactiva.formiobundle')
             )
         );
     }

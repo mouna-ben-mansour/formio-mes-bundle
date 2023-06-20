@@ -1,11 +1,11 @@
 <?php
 
-namespace Mouna\Bundle\formIOBundle;
+namespace Novactiva\Bundle\formIOBundle;
 
-use Mouna\Bundle\formIOBundle\DependencyInjection\FormIOExtension;
+use Novactiva\Bundle\formIOBundle\DependencyInjection\FormIOExtension;
 use LogicException;
-use Mouna\Bundle\formIOBundle\DependencyInjection\Compiler\CustomFallbackPass;
-use Mouna\Bundle\formIOBundle\DependencyInjection\Security\PolicyProvider\PolicyProvider;
+use Novactiva\Bundle\formIOBundle\DependencyInjection\Compiler\CustomFallbackPass;
+use Novactiva\Bundle\formIOBundle\DependencyInjection\Security\PolicyProvider\PolicyProvider;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;

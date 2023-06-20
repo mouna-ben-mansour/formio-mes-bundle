@@ -1,6 +1,6 @@
 <?php
 
-namespace Mouna\formIOBundle\Dqe;
+namespace Novactiva\formIOBundle\Dqe;
 
 use GuzzleHttp\Client as HttpClient;
 use Psr\Http\Message\ResponseInterface;

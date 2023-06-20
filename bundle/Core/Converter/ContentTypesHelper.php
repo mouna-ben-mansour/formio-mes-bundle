@@ -1,6 +1,6 @@
 <?php
 
-namespace Mouna\Bundle\formIOBundle\Core\Converter;
+namespace Novactiva\Bundle\formIOBundle\Core\Converter;
 
 use Ibexa\Contracts\Core\Repository\ContentTypeService;
 
