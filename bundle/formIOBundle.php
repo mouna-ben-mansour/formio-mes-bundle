@@ -1,11 +1,11 @@
 <?php
 
-namespace Novactiva\Bundle\formIOBundle;
+namespace Novactive\Bundle\formIOBundle;
 
-use Novactiva\Bundle\formIOBundle\DependencyInjection\FormIOExtension;
+use Novactive\Bundle\formIOBundle\DependencyInjection\FormIOExtension;
 use LogicException;
-use Novactiva\Bundle\formIOBundle\DependencyInjection\Compiler\CustomFallbackPass;
-use Novactiva\Bundle\formIOBundle\DependencyInjection\Security\PolicyProvider\PolicyProvider;
+use Novactive\Bundle\formIOBundle\DependencyInjection\Compiler\CustomFallbackPass;
+use Novactive\Bundle\formIOBundle\DependencyInjection\Security\PolicyProvider\PolicyProvider;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;

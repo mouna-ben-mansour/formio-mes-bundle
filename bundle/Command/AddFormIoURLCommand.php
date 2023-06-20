@@ -1,10 +1,10 @@
 <?php
 
-namespace Novactiva\Bundle\formIOBundle\Command;
+namespace Novactive\Bundle\formIOBundle\Command;
 
-use Novactiva\Bundle\formIOBundle\Command\ContentType;
-use Novactiva\Bundle\formIOBundle\Core\Converter\ContentTypesHelper;
-use Novactiva\Bundle\formIOBundle\Core\Installer\Field as FieldInstaller;
+use Novactive\Bundle\formIOBundle\Command\ContentType;
+use Novactive\Bundle\formIOBundle\Core\Converter\ContentTypesHelper;
+use Novactive\Bundle\formIOBundle\Core\Installer\Field as FieldInstaller;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -75,7 +75,7 @@ class AddFormIoURLCommand extends Command
                     The command <info>%command.name%</info> add the FieldType 'form-io-url'.
                     You can select the Content Type via the <info>identifier</info>, <info>identifiers</info>,
                     <info>group_identifier</info> option.
-                        - Identifier will be: <comment>%nova_ezseo.default.fieldtype_metas_identifier%</comment>
+                        - Identifier will be: <comment>%formio.default.fieldtype_metas_identifier%</comment>
                         - Name will be: <comment>Metas</comment>
                         - Category will be: <comment>SEO</comment>
                     EOT
@@ -157,7 +157,7 @@ class AddFormIoURLCommand extends Command
 
         $this->repository->getPermissionResolver()->setCurrentUserReference(
             $this->userService->loadUser(
-                $this->configResolver->getParameter('admin_user_id','novactiva.formiobundle')
+                $this->configResolver->getParameter('admin_user_id','novactive.formiobundle')
             )
         );
     }

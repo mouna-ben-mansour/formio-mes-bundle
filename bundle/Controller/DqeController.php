@@ -1,9 +1,9 @@
 <?php
 
-namespace Novactiva\Bundle\formIOBundle\Controller;
+namespace Novactive\Bundle\formIOBundle\Controller;
 
-use Novactiva\Bundle\formIOBundle\DependencyInjection\Configuration;
-use Novactiva\Bundle\formIOBundle\Dqe\DqeProxy;
+use Novactive\Bundle\formIOBundle\DependencyInjection\Configuration;
+use Novactive\Bundle\formIOBundle\Dqe\DqeProxy;
 use Ibexa\Contracts\Core\SiteAccess\ConfigResolverInterface;
 use Ibexa\Core\MVC\Symfony\SiteAccess;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

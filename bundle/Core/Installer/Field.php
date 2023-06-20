@@ -1,6 +1,6 @@
 <?php
 
-namespace Novactiva\Bundle\formIOBundle\Core\Installer;
+namespace Novactive\Bundle\formIOBundle\Core\Installer;
 
 use DateTime;
 use Exception;

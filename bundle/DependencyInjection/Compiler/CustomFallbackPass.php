@@ -1,8 +1,8 @@
 <?php
 
-namespace Novactiva\Bundle\formIOBundle\DependencyInjection\Compiler;
+namespace Novactive\Bundle\formIOBundle\DependencyInjection\Compiler;
 
-use Novactiva\Bundle\formIOBundle\DependencyInjection\FormIOExtension;
+use Novactive\Bundle\formIOBundle\DependencyInjection\FormIOExtension;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Novactiva\Bundle\formIOBundle\Twig;
+namespace Novactive\Bundle\formIOBundle\Twig;
 
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;

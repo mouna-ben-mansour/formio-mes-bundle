@@ -1,8 +1,8 @@
 {
-  "name" : "novactiva/formiobundle",
+  "name" : "novactive/formiobundle",
   "description" : "Novactive formIO bundle is an Ibexa Platform bundle for integration FormIO forms and validate it with DQE validation",
   "type" : "ibexa-bundle",
-  "homepage": "https://github.com/mouna-ben-mansour/formio-mes-bundle",
+  "homepage": "https://github.com/Novactive/Atlantic-formio-mes-Bundle",
   "authors" : [
     {
       "name" : "Mouna BEN MANSOUR",
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Novactiva\\Bundle\\formIOBundle\\": "bundle"
+      "Novactive\\Bundle\\formIOBundle\\": "bundle"
     }
   },
   "extra": {
