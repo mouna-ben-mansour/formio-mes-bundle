@@ -157,7 +157,7 @@ class AddFormIoURLCommand extends Command
 
         $this->repository->getPermissionResolver()->setCurrentUserReference(
             $this->userService->loadUser(
-                $this->configResolver->getParameter('admin_user_id','novactive.formiobundle')
+                $this->configResolver->getParameter('admin_user_id','formio')
             )
         );
     }
