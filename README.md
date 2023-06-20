@@ -23,7 +23,7 @@ Add the lib to your composer.json, run `composer require novactive/formiobundle`
 Then inject the bundle in the `bundles.php` of your application.
 
 ```php
-    Novactive\Bundle\formIOBundle\formIOBundle::class => [ 'all'=> true ],
+    Novactive\Bundle\formIOBundle\FormIOBundle::class => [ 'all'=> true ],
 ```
 
 ### Add routes
@@ -34,7 +34,7 @@ Make sure you add this route to your routing:
 # config/routes.yaml
 
 formio_dqe_proxy:
-  resource: "@formIOBundle/Resources/config/routing/routing_dqe.yaml"
+  resource: "@FormIOBundle/Resources/config/routing/routing_dqe.yaml"
   prefix:   /formio_dqe
 
 ```
