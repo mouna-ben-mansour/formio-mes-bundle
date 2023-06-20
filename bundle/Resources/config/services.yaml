@@ -5,6 +5,8 @@ services:
     public: false
 
   Novactive\Bundle\formIOBundle\Command\AddFormIoURLCommand: ~
+  Novactive\Bundle\formIOBundle\Core\Converter\ContentTypesHelper: ~
+  Novactive\Bundle\formIOBundle\Core\Installer\Field: ~
   # add more service definitions when explicit configuration is needed
   # please note that last definitions always *replace* previous ones
   Novactive\Bundle\formIOBundle\FieldType\FormIoURL\Type:
