@@ -6,7 +6,6 @@ let formIODQE = function () {
     function _init(params) {
         $('#formio').on('change', ':input[type=email]', function (event) {
             checkEmail($(this))
-            console.log('test')
         })
         $('#formio').on('change', '.formio-component-phoneNumber :input', function (event) {
             checkPhone($(this))
@@ -29,7 +28,6 @@ let formIODQE = function () {
         }
         let $myDqePhone = $phoneInput.dqephone(options)
         let errorDiv = $myDqePhone.parent().next('.help-block')
-        console.log($myDqePhone.parent().parent().parent().parent().parent().next('.help-block'));
         $myDqePhone.on('checked', function (ui, data) {
             if (data.status === 1) {
                 $phoneInput.addClass('is-valid').removeClass('is-invalid')
@@ -51,7 +49,6 @@ let formIODQE = function () {
         let $myDqeEmail = $emailInput.dqemail(options)
         let errorDiv = $myDqeEmail.parent().next('.help-block')
         $myDqeEmail.on('checked', function (ui, data) {
-            //console.log(data.state);
             if (data.state === 'error') {
                 $emailInput.removeClass('is-valid').addClass('is-invalid')
                 errorDiv.html(data.msg)
@@ -60,7 +57,6 @@ let formIODQE = function () {
                 errorDiv.html('')
             }
         })
-       console.log($myDqeEmail);
         return $myDqeEmail
     }
 
