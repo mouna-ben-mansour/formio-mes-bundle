@@ -6,9 +6,6 @@
         {% endblock %}
         {% apply spaceless %}
             {% if not ibexa_field_is_empty( content, field ) %}
-                <div class="help-block">Merci de renseigner ce champ. Tous les champs sont obligatoires.
-                    <span class="icon-warning"></span>
-                </div>
                 <div id="formio" url-data="{{ibexa_field_value(content, 'formio_url')}}"></div>
             {% endif %}
         {% endapply %}

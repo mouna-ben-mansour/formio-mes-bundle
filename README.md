@@ -5,16 +5,14 @@
 ## On this page
 - [Install](#install)
 - [configuration](#configuration)
-- [Examples](#examples)
-- [How to work on the bundle](#how-to-work-on-the-bundle)
-- [Requirements](#requirements)
+- [How to work with the bundle](#how-to-work-with-the-bundle)
+
 
 
 ----
 
 ## Install
 
-## <i class="fa fa-spinner"></i> Installation steps
 
 ### Use Composer
 
@@ -41,7 +39,7 @@ formio_dqe_proxy:
 
 ### Override if needed admin config parameter 
 
-It is used in command Add field SEO in Content Type
+It is used in command Add field form-io-url in Content Type
 
 ```yml
 formio.default.admin_user_id: NEW_ADMIN_ID
@@ -49,11 +47,56 @@ formio.default.admin_user_id: NEW_ADMIN_ID
 
 ## Configuration
 
+### DQE Validation
 
-## Examples
+A javascript module is provided to plug the DQE validation into your form. **DQE validation requires jQuery UI 1.13.**
 
+#### Configure DQE
 
-## How to work on the bundle
+```yaml
+formio:
+  system:
+    default:
+      # DQE host called by the proxy
+      dqe_host: '[Host used by the DQE proxy]' # Default: https://prod2.dqe-software.com
+      dqe_validator:
+        # Is the DQE proxy enabled for your site
+        enabled: true
+        # Should the proxy check if the referer matches the proxy scheme and host
+        validate_referer: true 
+        # DQE licence key
+        key:  '%env(DQE_LICENCE)%'
+```
 
+#### Add DQE LICENSE to `.env
 
-## Requirements
+Notice the `'%env(var)%'`call? Add these anywhere in your `.env` .
+```bash
+# .env
+# ...
+
+DQE_LICENCE==''
+```
+
+## How to work with the bundle
+
+### Add the Field `form-io-url` to your Content Type
+
+A command is provided to simply add the Field.
+
+```bash
+$ php bin/console formio:form-io-url -h
+Usage:
+ formio:form-io-url[--identifier="..."] [--identifiers="..."] [--group_identifier="..."]
+
+Options:
+ --identifier          a content type identifier
+ --identifiers         some content types identifier, separated by a comma
+ --group_identifier    a content type group identifier
+
+Help:
+ The command formio:form-io-url add the Field 'form-io-url'.
+ You can select the Content Type via the identifier, identifiers, group_identifier option.
+     - Identifier will be: %formio.default.fieldtype_formiourl_identifier%
+```
+

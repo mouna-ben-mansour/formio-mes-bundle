@@ -72,12 +72,10 @@ class AddFormIoURLCommand extends Command
             ->addOption('group_identifier', null, InputOption::VALUE_REQUIRED, 'a content type group identifier')
             ->setHelp(
                 <<<EOT
-                    The command <info>%command.name%</info> add the FieldType 'form-io-url'.
+                    The command <info>%command.name%</info> add the Field 'form-io-url'.
                     You can select the Content Type via the <info>identifier</info>, <info>identifiers</info>,
                     <info>group_identifier</info> option.
-                        - Identifier will be: <comment>%formio.default.fieldtype_metas_identifier%</comment>
-                        - Name will be: <comment>Metas</comment>
-                        - Category will be: <comment>SEO</comment>
+                        - Identifier will be: <comment>%formio.default.fieldtype_formiourl_identifier%</comment>
                     EOT
             );
     }
